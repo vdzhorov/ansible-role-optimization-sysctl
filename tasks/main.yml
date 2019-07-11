@@ -1,0 +1,9 @@
+---
+
+- name: Set sysctl variables
+  sysctl:
+    name: '{{ item.key }}'
+    value: '{{ item.value }}'
+    state: present
+    sysctl_set: yes
+  loop: '{{ sysctl_vars | dict2items }}'
