@@ -1,7 +1,6 @@
 ---
 
 sysctl_vars:
-  fs.file-max: '2097152' # Increase size of file handles and inode cache
   vm.swappiness: '10' # Do less swapping
   vm.dirty_ratio: '60'
   vm.dirty_background_ratio: '2'
