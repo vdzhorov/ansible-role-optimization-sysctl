@@ -29,5 +29,3 @@ sysctl_vars:
   net.ipv4.tcp_wmem: '8192 65536 33554432' # Increase the write-buffer-space allocatable
   net.ipv4.udp_wmem_min: '16384'
   net.ipv4.tcp_max_tw_buckets: '1440000' # Increase the tcp-time-wait buckets pool size to prevent simple DOS attacks
-  net.ipv4.tcp_tw_recycle: '1'
-  net.ipv4.tcp_tw_reuse: '1'
