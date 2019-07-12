@@ -1,8 +1,10 @@
 ---
 
 sysctl_vars:
+  kernel.sysrq: '1' # Enable sysrc key combination (useful for debugging purposes)
   vm.swappiness: '10' # Do less swapping
   vm.dirty_ratio: '60'
+  vm.vfs_cache_pressure: '50' # This percentage value controls the tendency of the kernel to reclaim the memory which is used for caching of directory and inode objects.
   vm.dirty_background_ratio: '2'
   kernel.sched_migration_cost_ns: '5000000' # Sets the time before the kernel considers migrating a proccess to another core
   net.ipv4.tcp_synack_retries: '2' # Number of times SYNACKs for passive TCP connection.
